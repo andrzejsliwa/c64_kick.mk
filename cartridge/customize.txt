@@ -1,0 +1,11 @@
+in hexedit (offset $A11B)
+
+$a11b frame color
+$a11c background color
+$a11d message line color
+$a11e info line color
+$a11f foreground color
+$a120 error color
+$a121 marked color
+$a122 source tab column
+$a123 return tab column

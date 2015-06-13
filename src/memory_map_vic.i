@@ -1,0 +1,51 @@
+/*
+ *  VIC mapping
+ */
+
+.label /* $D000 - 53248 */ VIC_D000_sprite_0_x_pos = $D000
+.label /* $D001 - 53249 */ VIC_D001_sprite_0_y_pos = $D001
+.label /* $D002 - 53250 */ VIC_D002_sprite_1_x_pos = $D002
+.label /* $D003 - 53251 */ VIC_D003_sprite_1_y_pos = $D003
+.label /* $D004 - 53252 */ VIC_D004_sprite_2_x_pos = $D004
+.label /* $D005 - 53253 */ VIC_D005_sprite_2_y_pos = $D005
+.label /* $D006 - 53254 */ VIC_D006_sprite_3_x_pos = $D006
+.label /* $D007 - 53255 */ VIC_D007_sprite_3_y_pos = $D007
+.label /* $D008 - 53256 */ VIC_D008_sprite_4_x_pos = $D008
+.label /* $D009 - 53257 */ VIC_D009_sprite_4_y_pos = $D009
+.label /* $D00A - 53258 */ VIC_D00A_sprite_5_x_pos = $D00A
+.label /* $D00B - 53259 */ VIC_D00B_sprite_5_y_pos = $D00B
+.label /* $D00C - 53260 */ VIC_D00C_sprite_6_x_pos = $D00C
+.label /* $D00D - 53261 */ VIC_D00D_sprite_6_y_pos = $D00D
+.label /* $D00E - 53262 */ VIC_D00E_sprite_7_x_pos = $D00E
+.label /* $D00F - 53263 */ VIC_D00F_sprite_7_y_pos = $D00F
+.label /* $D010 - 53264 */ VIC_D010_sprites_0minus_7_msb_of_x_coordinate = $D010
+.label /* $D011 - 53265 */ VIC_D011_control_register_1 = $D011
+.label /* $D012 - 53266 */ VIC_D012_raster_position = $D012
+.label /* $D013 - 53267 */ VIC_D013_latch_x_pos = $D013
+.label /* $D014 - 53268 */ VIC_D014_latch_y_pos = $D014
+.label /* $D015 - 53269 */ VIC_D015_sprite_display_enable = $D015
+.label /* $D016 - 53270 */ VIC_D016_control_register_2 = $D016
+.label /* $D017 - 53271 */ VIC_D017_sprites_expand_2x_vertical_y = $D017
+.label /* $D018 - 53272 */ VIC_D018_memory_control_register = $D018
+.label /* $D019 - 53273 */ VIC_D019_interrupt_request_register_irr = $D019
+.label /* $D01A - 53274 */ VIC_D01A_interrupt_mask_register_imr = $D01A
+.label /* $D01B - 53275 */ VIC_D01B_sprite_to_background_display_priority = $D01B
+.label /* $D01C - 53276 */ VIC_D01C_sprites_multi_color_mode_select = $D01C
+.label /* $D01D - 53277 */ VIC_D01D_sprites_expand_2x_horizontal_x = $D01D
+.label /* $D01E - 53278 */ VIC_D01E_sprite_to_sprite_collision_detect = $D01E
+.label /* $D01F - 53279 */ VIC_D01F_sprite_to_background_collision_detect = $D01F
+.label /* $D020 - 53280 */ VIC_D020_border_color = $D020
+.label /* $D021 - 53281 */ VIC_D021_background_color_0 = $D021
+.label /* $D022 - 53282 */ VIC_D022_background_color_1 = $D022
+.label /* $D023 - 53283 */ VIC_D023_background_color_2 = $D023
+.label /* $D024 - 53284 */ VIC_D024_background_color_3 = $D024
+.label /* $D025 - 53285 */ VIC_D025_sprite_multi_color_register_0 = $D025
+.label /* $D026 - 53286 */ VIC_D026_sprite_multi_color_register_1 = $D026
+.label /* $D027 - 53287 */ VIC_D027_sprite_0_color = $D027
+.label /* $D028 - 53288 */ VIC_D028_sprite_1_color = $D028
+.label /* $D029 - 53289 */ VIC_D029_sprite_2_color = $D029
+.label /* $D02A - 53290 */ VIC_D02A_sprite_3_color = $D02A
+.label /* $D02B - 53291 */ VIC_D02B_sprite_4_color = $D02B
+.label /* $D02C - 53292 */ VIC_D02C_sprite_5_color = $D02C
+.label /* $D02D - 53293 */ VIC_D02D_sprite_6_color = $D02D
+.label /* $D02E - 53294 */ VIC_D02E_sprite_7_color = $D02E

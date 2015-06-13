@@ -1,0 +1,37 @@
+.import source "memory_map.i"
+.import source "tools.i"
+.import source "screen.i"
+
+.var  monitor = createFile("build/monitor.txt")
+.eval monitor.writeln("ll \"build/example.vs\"")
+
+.macro break() { .eval monitor.writeln("break " + toHexString(*)) }
+
+:basic_upstart(start, 2015)
+
+.pc = $1000 "Program"
+start:
+    sei
+main_loop:
+    :break() ldx #$00
+
+loop_x:
+    ldy #$00
+loop_y:
+    lda colours,x
+    sta VIC_D020_border_color
+    iny
+    cpy #$20
+    bne loop_y
+    inx
+    cpx #$08
+    bne loop_x
+    lda $dc01
+    cmp #$ef
+    bne main_loop
+    rts
+
+colours:
+    .byte $00, $06, $0e, $03
+    .byte $03, $0e, $06, $00
+
