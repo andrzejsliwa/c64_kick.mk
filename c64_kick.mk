@@ -121,7 +121,7 @@ stop:
 
 help::
 	@printf "%s\n" \
-		"c64_tmpx targets:" \
+		"c64_kick.mk targets:" \
         "  compile          - compile KICK ASSEMBLER source files (src/*.s) " \
 	    "  convert          - convert BASIC source files (src/*.bas) " \
 	    "  disk             - compile, convert, create disk file d64" \
