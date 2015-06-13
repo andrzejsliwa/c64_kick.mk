@@ -26,7 +26,7 @@ loop_y:
     inx
     cpx #$08
     bne loop_x
-    lda $dc01
+    lda CIA1_DC01_data_port_b_keyboard
     cmp #$ef
     bne main_loop
     rts
