@@ -1,0 +1,9 @@
+parsing
+flex pass 1
+.const GLOBAL_VIC_BANK_CONFIG_VALUE   = 3 - GLOBAL_VIC_BANK_NR_CONFIG  
+                                            ^
+
+Error: Unknown symbol 'GLOBAL_VIC_BANK_NR_CONFIG'
+at line 1, column 45 in vic_config.inc
+
+

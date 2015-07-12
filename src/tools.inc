@@ -11,3 +11,8 @@ end:
     .word 0
     .pc = $080e "Basic - end"
 }
+
+.var  monitor = createFile("build/monitor.txt")
+.eval monitor.writeln("ll \"build/example.vs\"")
+
+.macro break() { .eval monitor.writeln("break " + toHexString(*)) }
