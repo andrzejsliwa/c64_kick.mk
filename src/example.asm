@@ -4,7 +4,9 @@
 .var GLOBAL_VIC_BANK_CONFIG    = 0 // 0 - default ($0000 - $3fff)
 .var GLOBAL_VIC_SCREEN_CONFIG  = 1 // 1 - default ($0400)
 .var GLOBAL_VIC_CHARSET_CONFIG = 2 // 2 - default ($1000 - $17ff)
-.import source "vic_configuration.inc"
+.var GLOBAL_CPU_PORT_MEMORY_CONFIG  = %101 // %111 - default
+
+.import source "global_configuration.inc"
 
 :basic_upstart(start, 2015)
 
@@ -13,5 +15,18 @@ start:
     :VIC_global_setup_bank()
     :VIC_global_setup_screen_memory()
     :VIC_global_setup_charset_memory()
+    :CPU_PORT_memory_setup()
+
+
+    
+//     ldx #0
+// loop:
+// 	lda $d000, x
+// 	sta GLOBAL_VIC_CHARSET_ADDRESS, x
+//     cpx #$ff
+//     beq next
+//     inx
+//     jmp loop
+// next:
     rts
 
