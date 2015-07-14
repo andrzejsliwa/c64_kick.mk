@@ -22,3 +22,11 @@ c64_kick.mk targets:
 ## Example monitor with labels
 
 ![vice_monitor](https://raw.githubusercontent.com/andrzejsliwa/c64_kick.mk/master/vice_monitor.png)
+
+## Example of global configuration
+
+![global_config](https://raw.githubusercontent.com/andrzejsliwa/c64_kick.mk/master/global_config.png)
+
+## Example of output from global configuration
+
+![output_of_global_config](https://raw.githubusercontent.com/andrzejsliwa/c64_kick.mk/master/output_of_global_config.png)
